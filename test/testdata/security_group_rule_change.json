@@ -1,0 +1,47 @@
+{
+  "format_version": "1.1",
+  "resource_changes": [
+    {
+      "address": "module.security_group_test2.aws_security_group_rule.ingress_cidrs[\"192.168.1.5/32-3000-3001\"]",
+      "module_address": "module.security_group_test2",
+      "mode": "managed",
+      "type": "aws_security_group_rule",
+      "name": "ingress_cidrs",
+      "index": "192.168.1.5/32-3000-3001",
+      "provider_name": "registry.terraform.io/hashicorp/aws",
+      "change": {
+        "actions": [
+          "create"
+        ],
+        "before": null,
+        "after": {
+          "cidr_blocks": [
+            "192.168.1.5/32"
+          ],
+          "description": null,
+          "from_port": 3000,
+          "ipv6_cidr_blocks": null,
+          "prefix_list_ids": null,
+          "protocol": "tcp",
+          "security_group_id": "sg-1234",
+          "self": false,
+          "to_port": 3001,
+          "type": "ingress"
+        },
+        "after_unknown": {
+          "cidr_blocks": [
+            false
+          ],
+          "id": true,
+          "source_security_group_id": true
+        },
+        "before_sensitive": false,
+        "after_sensitive": {
+          "cidr_blocks": [
+            false
+          ]
+        }
+      }
+    }
+  ]
+}
